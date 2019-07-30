@@ -45,7 +45,6 @@ def display():
     global count
     print(count)
     x= format(count, '03b')
-    print("x=",x)
     if x[2:3] == '1':
         GPIO.output(26, GPIO.HIGH)
     else:
